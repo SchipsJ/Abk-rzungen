@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Abkürzungsverzeichnis</title>
+
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: #1e293b;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .toggle:hover {
+      border-color: var(--accent);
+    }
+
+    input[type="search"] {
+      width: 100%;
+      max-width: 420px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 30px;
+      background: var(--card);
+      color: var(--text);
+    }
+
+    dl {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+
+    dt {
+      font-weight: 600;
+      margin-top: 14px;
+    }
+
+    dd {
+      margin-left: 0;
+      color: var(--muted);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    dd:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <h1>Abkürzungsverzeichnis</h1>
+  <p class="subtitle">Technische und informatische Abkürzungen zum Nachschlagen</p>
+
+  <button id="darkToggle" class="toggle">🌙 Dark Mode</button>
+
+  <input type="search" id="suche" placeholder="Abkürzung oder Bedeutung suchen…">
+
+<section id="quiz" style="margin-bottom:40px;">
+  <h2>Abkürzungs‑Spiel</h2>
+
+  <p><strong id="quizAbk">?</strong></p>
+
+  <input type="text" id="quizAntwort" placeholder="Bedeutung eingeben…">
+  <br><br>
+
+  <button id="checkBtn">Antwort prüfen</button>
+  <button id="nextBtn">Nächste Frage</button>
+
+  <p id="feedback"></p>
+</section>
+
+  <dl>
+    <dt>ACK</dt><dd>Acknowledge (Bestätigung)</dd>
+    <dt>AIX</dt><dd>Advanced Interactive eXecutive (IBM Unix)</dd>
+    <dt>ALU</dt><dd>Arithmetic Logic Unit (Rechenwerk)</dd>
+    <dt>APIC</dt><dd>Advanced Programmable Interrupt Controller</dd>
+    <dt>ASIC</dt><dd>Application-Specific Integrated Circuit</dd>
+
+    <dt>BIOS</dt><dd>Basic Input/Output System</dd>
+    <dt>BRQ</dt><dd>Bus Request</dd>
+    <dt>BSD</dt><dd>Berkeley Software Distribution</dd>
+    <dt>BUS</dt><dd>Datenbus / Systembus</dd>
+
+    <dt>CAD</dt><dd>Computer Aided Design</dd>
+    <dt>CAN</dt><dd>Controller Area Network</dd>
+    <dt>CISC</dt><dd>Complex Instruction Set Computer</dd>
+    <dt>CLK</dt><dd>Clock (Takt)</dd>
+    <dt>CML</dt><dd>Current Mode Logic</dd>
+    <dt>CPU</dt><dd>Central Processing Unit</dd>
+    <dt>CSS</dt><dd>Cascading Style Sheets</dd>
+
+    <dt>DDR‑SDRAM</dt><dd>Double Data Rate Synchronous DRAM</dd>
+    <dt>DIMM</dt><dd>Dual Inline Memory Module</dd>
+    <dt>DMA</dt><dd>Direct Memory Access</dd>
+    <dt>DP</dt><dd>DisplayPort</dd>
+    <dt>DVI</dt><dd>Digital Visual Interface</dd>
+    <dt>DPI</dt><dd>Dots Per Inch</dd>
+
+    <dt>ECC</dt><dd>Error Correcting Code</dd>
+    <dt>EEPROM</dt><dd>Electrically Erasable Programmable ROM</dd>
+    <dt>EVA</dt><dd>Eingabe – Verarbeitung – Ausgabe</dd>
+
+    <dt>FAT</dt><dd>File Allocation Table</dd>
+    <dt>FPGA</dt><dd>Field Programmable Gate Array</dd>
+    <dt>FPU</dt><dd>Floating Point Unit</dd>
+
+    <dt>GB</dt><dd>Gigabyte</dd>
+    <dt>GPU</dt><dd>Graphics Processing Unit</dd>
+    <dt>GPT</dt><dd>GUID Partition Table</dd>
+
+    <dt>HDD</dt><dd>Hard Disk Drive</dd>
+    <dt>HDMI</dt><dd>High Definition Multimedia Interface</dd>
+    <dt>HTML</dt><dd>HyperText Markup Language</dd>
+
+    <dt>I²C</dt><dd>Inter‑Integrated Circuit</dd>
+    <dt>IRQ</dt><dd>Interrupt Request</dd>
+
+    <dt>MB</dt><dd>Megabyte</dd>
+    <dt>MiB</dt><dd>Mebibyte</dd>
+    <dt>MMU</dt><dd>Memory Management Unit</dd>
+
+    <dt>NTFS</dt><dd>New Technology File System</dd>
+
+    <dt>OS</dt><dd>Operating System</dd>
+
+    <dt>PCIe</dt><dd>Peripheral Component Interconnect Express</dd>
+    <dt>POST</dt><dd>Power‑On Self Test</dd>
+
+    <dt>RAID</dt><dd>Redundant Array of Independent Disks</dd>
+    <dt>RAM</dt><dd>Random Access Memory</dd>
+    <dt>REPL</dt><dd>Read–Eval–Print Loop</dd>
+    <dt>RISC</dt><dd>Reduced Instruction Set Computer</dd>
+    <dt>ROM</dt><dd>Read‑Only Memory</dd>
+
+    <dt>SATA</dt><dd>Serial ATA</dd>
+    <dt>SCSI</dt><dd>Small Computer System Interface</dd>
+    <dt>SIMD</dt><dd>Single Instruction Multiple Data</dd>
+    <dt>SSD</dt><dd>Solid State Drive</dd>
+
+    <dt>UEFI</dt><dd>Unified Extensible Firmware Interface</dd>
+    <dt>USB</dt><dd>Universal Serial Bus</dd>
+
+    <dt>VGA</dt><dd>Video Graphics Array</dd>
+    <dt>VRAM</dt><dd>Video Random Access Memory</dd>
+
+    <dt>WYSIWYP</dt><dd>What You See Is What You Print</dd>
+
+    <dt>XML</dt><dd>eXtensible Markup Language</dd>
+  </dl>
+
+</div>
+
+<script>
+  // Suche
+  const suche = document.getElementById("suche");
+  const begriffe = document.querySelectorAll("dt");
+
+  suche.addEventListener("input", () => {
+    const text = suche.value.toLowerCase();
+    begriffe.forEach(dt => {
+      const dd = dt.nextElementSibling;
+      const sichtbar =
+        dt.textContent.toLowerCase().includes(text) ||
+        dd.textContent.toLowerCase().includes(text);
+      dt.style.display = sichtbar ? "" : "none";
+      dd.style.display = sichtbar ? "" : "none";
+    });
+  });
+
+  // Dark Mode
+  const toggle = document.getElementById("darkToggle");
+  if (localStorage.getItem("dark") === "true") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️ Light Mode";
+  }
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const aktiv = document.body.classList.contains("dark");
+    localStorage.setItem("dark", aktiv);
+    toggle.textContent = aktiv ? "☀️ Light Mode" : "🌙 Dark Mode";
+  });
+</script>
+
+</body>
+</html>

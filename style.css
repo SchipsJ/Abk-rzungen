@@ -1,0 +1,112 @@
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+input[type="search"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Abkürzungs-Liste */
+dl {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 6px;
+  color: var(--muted);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+dt:first-child {
+  margin-top: 0;
+}
+
+dd:last-child {
+  border-bottom: none;
+}
+``
+/* Dark Mode Farben */
+body.dark {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+  --border: #1e293b;
+}
+``
+
+#quiz {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+#quizAbk {
+  font-size: 1.8rem;
+}
+
+#quiz input {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#quiz button {
+  margin-right: 10px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: none;
+  cursor: pointer;
+}
